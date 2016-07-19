@@ -1,0 +1,16 @@
+// Place your settings in this file to overwrite the default settings
+{
+	"editor.tabSize": 4,
+	// Controls if the editor will insert spaces for tabs. Accepted values:  "auto", true, false. If set to "auto", the value will be guessed when a file is opened.
+	"editor.insertSpaces": true,
+
+	// Whether the proxy server certificate should be verified against the list of supplied CAs.
+	"http.proxyStrictSSL": false,
+	"git.autofetch": false,
+	// The path of the shell that the terminal uses on Windows.
+	"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+	// Controls whether the editor should render indent guides
+	"editor.renderIndentGuides": true,
+	// Controls whether the editor should render whitespace characters
+	"editor.renderWhitespace": true
+}
