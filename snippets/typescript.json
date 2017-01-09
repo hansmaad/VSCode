@@ -32,5 +32,98 @@
 			"}"
 		],
 		"description": "Insert empty function with arguments"
+	},
+	"Angular1 component": {
+		"prefix": "ngcomponent",
+		"body": [
+			"module $1 {",
+			"",
+			"    export interface I$4Controller {",
+			"",
+			"    }",
+			"",
+			"    class $4Controller implements I$4Controller {",
+			"",
+			"    }",
+			"",
+			"    angular.module('$2').component('$3', {",
+			"        bindings : {$5},",
+			"        templateUrl: '-template.html',",
+			"        controller : $4Controller,",
+			"    });",
+			"}"
+		]
+	},
+	"Angular1 controller": {
+		"prefix": "ngcontroller",
+		"body": [
+			"module $1 {",
+			"",
+			"    export interface I$3Controller {",
+			"",
+			"    }",
+			"",
+			"    class $3Controller implements I$3Controller {",
+			"",
+			"    }",
+			"",
+			"    angular.module('$2').controller('$3Controller', $3Controller);",
+			"}"
+		]
+	},	
+	"Angular1 service": {
+		"prefix": "ngservice",
+		"body": [
+			"module $1 {",
+			"",
+			"    export interface I$4Service {",
+			"    }",
+			"",
+			"    class $4Service implements I$4Service {",
+			"        $5",
+			"    }",
+			"",
+			"    angular.module('$2').service('$3', $4Service);",
+			"}"
+		]
+	},
+	"Angular1 inject": {
+		"prefix": "nginject",
+		"body": [
+			"static $inject = ['$1'$2];",
+			"",
+			"constructor($1) {",
+			"",
+			"}"
+		]
+	},
+	"Jasmine describe": {
+		"prefix": "jad",
+		"body": [
+			"describe('$1', function() {",
+			"",
+			"    $0",
+			"",
+			"    it('', function() {",
+			"",
+			"    });",
+			"});"
+		]
+	},
+	"Jasmine beforeEach": {
+		"prefix": "jab",
+		"body": [
+			"beforeEach(function() {",
+			"    $0",
+			"});"
+		]
+	},
+	"Jasmine it": {
+		"prefix": "jai",
+		"body": [
+			"it('$1', function() {",
+			"    $0",
+			"});"
+		]
 	}
 }

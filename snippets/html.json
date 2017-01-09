@@ -40,5 +40,56 @@
      "</body>",
      "</html>"
     ]
+  },
+  "DIV with class" : {
+    "prefix": "divc",
+    "body" : [
+     "<div class=\"$1\">",
+     "    $2",
+     "</div>"
+    ]
+  },
+  "button ng-click" : {
+    "prefix": "ngbtn",
+    "body" : [
+     "<button type=\"button\" class=\"btn btn-default\" ng-click=\"$1\">",
+     "    $2",
+     "</button>"
+    ]
+  },
+  "a ng-click" : {
+    "prefix": "nga",
+    "body" : [
+     "<a href=\"\" ng-click=\"$1\">$2</a>"
+    ]
+  },
+  "glyphicon" : {
+    "prefix": "glyph",
+    "body" : [
+     "<span class=\"glyphicon glyphicon-$1\">$2</span>"
+    ]
+  },
+  "form group with input" : {
+    "prefix": "formgroupi",
+    "body" : [
+     "<div class=\"form-group\">",
+     "    <label for=\"$1\"></label>",
+     "    <input id=\"$1\" class=\"form-control\" name=\"$2\" type=\"text\" >",
+     "</div>"
+    ]
+  },
+  "form group with quantity input" : {
+    "prefix": "formgroupq",
+    "body" : [
+     "<div class=\"form-group\">",
+     "    <label for=\"$1\"></label>",
+     "    <pascal-quantity-input form-id=\"$1\" name=\"$2\"",
+     "                           quantity=\"$3\" ng-model=\"$4\">",
+     "    </pascal-quantity-input>",
+     "</div>"
+    ]
   }
 }
+
+
+
