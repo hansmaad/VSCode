@@ -13,7 +13,20 @@
 	"editor.renderIndentGuides": true,
 	// Controls whether the editor should render whitespace characters
 	"editor.renderWhitespace": true,
+	"editor.renderWhitespace": "boundary",
 
 	// Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
     "window.zoomLevel": -0.1
+    "window.zoomLevel": -0.1,
+    "workbench.iconTheme": "vs-seti",
+
+	// Controls if the minimap is shown
+	"editor.minimap.enabled": true,
+
+	// Render the actual characters on a line (as opposed to color blocks)
+	"editor.minimap.renderCharacters": false,
+  	// Limit the width of the minimap to render at most a certain number of columns
+  	"editor.minimap.maxColumn": 80,
+	// Controls if the editor should allow to move selections via drag and drop.
+	"editor.dragAndDrop": true
 }
